@@ -14,7 +14,6 @@ function createMenuItem(itemName, itemPrice, itemType) {
    if (!ingredients.includes(food)) {
    ingredients.push(food)
   }
-  console.log("array:", ingredients)
 }
 
 
