@@ -7,7 +7,7 @@ function createMenuItem(itemName, itemPrice, itemType) {
    name: itemName,
    price: itemPrice,
    type: itemType,
- };
+ }
 }
 
  function addIngredients(food, ingredients) {
