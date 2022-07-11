@@ -22,9 +22,17 @@ function addMenuItem(restaurant, newItem) {
   }
 }
 
-function removeMenuItem() {
-  
+function removeMenuItem(restaurant, foodItem, type) {
+ for (var i = 0; i < restaurant.menus[type].length; i++) {
+   if (restaurant.menus[type][i].name === foodItem) {
+     restaurant.menus[type].splice(i, 1);
+     return `No one is eating our ${foodItem} - it has been removed from the ${type} menu!`;
+   }
+ }
+ return `Sorry, we don't sell ${foodItem}, try adding a new recipe!`;
 }
+
+
 
 
 
